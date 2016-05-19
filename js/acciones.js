@@ -4,12 +4,12 @@ $(document).ready(function(e) {
  function onDeviceReady() {
 	 
 	 $('#localizar').on('tap', function (){
-		navigator.geolocation.getCurrentPosition( geolocationSuccess, $('#localizacion').html('Error en la localizacion') );
+		navigator.geolocation.getCurrentPosition( onSuccess, $('#localizacion').html('Error en la localizacion') );
 	 });
 
  }
  
- function geolocationSuccess (position){ 
+ var onSuccess = function (position){ 
 		 $('#localizacion').html('Latitude: '          + position.coords.latitude          + '\n' +
           'Longitude: '         + position.coords.longitude         + '\n' +
           'Altitude: '          + position.coords.altitude          + '\n' +
