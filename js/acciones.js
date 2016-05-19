@@ -4,7 +4,7 @@ $(document).ready(function(e) {
  function onDeviceReady() {
 	 
 	function onSuccess(position) {
-    
+    alert ("dentro");
     $('#localizacion').html ( 'Latitude: '  + position.coords.latitude      + '<br />' +
                         'Longitude: ' + position.coords.longitude     + '<br />' +
                         '<hr />'      + element.innerHTML);
