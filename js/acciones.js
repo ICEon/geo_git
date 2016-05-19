@@ -4,7 +4,12 @@ $(document).ready(function(e) {
  function onDeviceReady() {
 	 
 	 $('#localizar').on('tap', function (){
-		navigator.geolocation.getCurrentPosition( function (position){ 
+		navigator.geolocation.getCurrentPosition( geolocationSuccess, $('#localizacion').html('Error en la localizacion') );
+	 });
+
+ }
+ 
+ function geolocationSuccess (position){ 
 		 $('#localizacion').html('Latitude: '          + position.coords.latitude          + '\n' +
           'Longitude: '         + position.coords.longitude         + '\n' +
           'Altitude: '          + position.coords.altitude          + '\n' +
@@ -13,11 +18,6 @@ $(document).ready(function(e) {
           'Heading: '           + position.coords.heading           + '\n' +
           'Speed: '             + position.coords.speed             + '\n' +
           'Timestamp: '         + position.timestamp                + '\n');
-		}, $('#localizacion').html('Error en la localizacion') );
-	 });
-
- }
- 
- 
+		}
  
 });
