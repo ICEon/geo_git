@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+ <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->  
+ <widget xmlns   = "http://www.w3.org/ns/widgets"  
+     xmlns:gap = "http://phonegap.com/ns/1.0"  
+     id    = "com.phonegap.Bullying"  
+     version  = "2.0.0">  
+	 
+   <name>Geolocalizacion</name>  
+   
+   <description>  
+     App para ejemplificar la geolicalizacion
+   </description>  
+   
+   <author href="https://build.phonegap.com" email="fjcoutop@gmail.com">  
+       Francisco Jose Couto Pelaez
+   </author>  
+   
+   <!-- Personaliza la aplicacion y plataforma  -->  
+  <preference name="phonegap-version" value="3.7.0" />
+
+   <preference name="target-device"       value="universal" />   
+   <preference name="fullscreen"         value="true" />      
+   <preference name="android-installLocation"  value="auto" />  
+
+   <!-- Plugins -->  
+   <!-- Core plugins -->  
+   <plugin name="org.apache.cordova.geolocation" spec="0.3.12" source="pgb" /> 
+ 
+
+   <!-- Third party plugins -->  
+
+
+   
+
+   
+ </widget>  

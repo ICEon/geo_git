@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+ 
+  <title>vive UMAD</title>
+
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" /> 
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">        
+
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.12.1.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js" type="text/javascript"></script>
+  <script src="phonegap.js" type="text/javascript"></script>
+ </head>
+
+ <body>
+ 
+ <!-- Principal -->
+ <div data-role="page" id="principal" >   
+  <div data-role="header" data-position="fixed" data-tap-toggle="false" style="background-color:#76AFF4;">
+    <div id="titulo" style="text-shadow: 1px 1px 1px black;">
+     App <span style="color:#B2001E">Geolicalización</span>
+    </div>
+    
+  </div>
+
+  <div data-role="main" class="ui-content">
+   <a href="#datos" id="localizar" class="ui-btn ui-icon-eye ui-btn-icon-left ui-shadow">Ubicame</a>
+  </div>
+ </div>
+ <!-- Principal -->
+ <!-- Datos -->
+  <div data-role="page" id="datos">
+   <div data-role="header" data-position="fixed" data-tap-toggle="false" style="background-color:#76AFF4;">
+    <div id="titulo" style="text-shadow: 1px 1px 1px black;">
+    <span style="color:#B2001E">Tus datos de ubicacion son</span>
+    </div>
+    <div data-role="main" class="ui-content">
+     <div id="localizacion">&nbsp;</div>
+  </div>
+  </div>
+  </div>
+ <!-- Datos -->
+ </body>
+</html> 
